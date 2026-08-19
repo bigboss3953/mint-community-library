@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Programs() {
   const programs = [
     {
@@ -63,9 +65,9 @@ export default function Programs() {
           <p className="text-lg text-mint-700 mb-8">
             We're always happy to discuss custom programs and classes tailored to your needs.
           </p>
-          <button className="btn-primary">
+          <Link href="/contact" className="btn-primary">
             Contact Us About Custom Programs
-          </button>
+          </Link>
         </div>
       </section>
     </>
