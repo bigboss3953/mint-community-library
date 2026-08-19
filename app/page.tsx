@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Hero from '@/components/Hero'
 
 export default function Home() {
@@ -51,12 +52,9 @@ export default function Home() {
             Get involved, explore our resources, and be part of something special.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-3 bg-white text-mint-600 rounded-lg font-medium hover:bg-mint-50 transition-colors">
-              Get Your Library Card
-            </button>
-            <button className="px-8 py-3 bg-mint-400 text-white rounded-lg font-medium hover:bg-mint-500 transition-colors">
+            <Link href="/contact" className="px-8 py-3 bg-mint-400 text-white rounded-lg font-medium hover:bg-mint-500 transition-colors inline-block">
               Visit Us Today
-            </button>
+            </Link>
           </div>
         </div>
       </section>
