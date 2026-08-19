@@ -10,12 +10,47 @@ export default function Header() {
     <header className="bg-white border-b border-mint-100 sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          {/* Logo */}
+          {/* Logo with Mint Leaves */}
           <Link href="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-mint-600 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold">M</span>
+            <div className="w-12 h-12 flex items-center justify-center">
+              <svg
+                viewBox="0 0 48 48"
+                className="w-12 h-12"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                {/* Left Leaf */}
+                <ellipse
+                  cx="16"
+                  cy="28"
+                  rx="8"
+                  ry="14"
+                  fill="#7ED321"
+                  transform="rotate(-45 16 28)"
+                />
+                {/* Center Leaf */}
+                <ellipse
+                  cx="24"
+                  cy="12"
+                  rx="7"
+                  ry="12"
+                  fill="#006B3C"
+                  transform="rotate(0 24 12)"
+                />
+                {/* Right Leaf */}
+                <ellipse
+                  cx="32"
+                  cy="28"
+                  rx="8"
+                  ry="14"
+                  fill="#5CB703"
+                  transform="rotate(45 32 28)"
+                />
+              </svg>
             </div>
-            <span className="font-heading font-bold text-xl text-mint-600">Mint Library</span>
+            <div className="hidden sm:block">
+              <div className="font-heading font-bold text-sm leading-tight text-mint-600">Mint Community</div>
+              <div className="font-heading font-bold text-sm leading-tight text-mint-600">Library</div>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
