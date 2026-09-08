@@ -33,10 +33,10 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right - mint-library-image */}
-          <div className="rounded-lg h-80 overflow-hidden">
+          {/* Right - Library Image */}
+          <div className="rounded-lg h-80 overflow-hidden shadow-lg">
             <img
-              src="/mint-library-image.jpeg"
+              src="/mint-library.jpeg"
               alt="Mint Community Library"
               className="w-full h-full object-cover"
             />

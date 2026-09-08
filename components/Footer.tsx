@@ -11,7 +11,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <img
-                src="/mint-library-logo.png"
+                src="/mint library logo 1.png"
                 alt="Mint Community Library Logo"
                 className="w-12 h-12 object-contain"
               />
