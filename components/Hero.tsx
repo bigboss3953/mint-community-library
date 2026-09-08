@@ -36,7 +36,7 @@ export default function Hero() {
           {/* Right - WhatsApp Image */}
           <div className="rounded-lg h-80 overflow-hidden">
             <img
-              src="/whatsapp-image.png"
+              src="/mint-library-image.jpeg"
               alt="Mint Community Library"
               className="w-full h-full object-cover"
             />
