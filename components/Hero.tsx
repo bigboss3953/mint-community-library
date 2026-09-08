@@ -33,12 +33,13 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right - Placeholder for Image */}
-          <div className="bg-mint-200 rounded-lg h-80 flex items-center justify-center">
-            <div className="text-center">
-              <div className="text-6xl mb-4">📚</div>
-              <p className="text-mint-700">Add your library image here</p>
-            </div>
+          {/* Right - WhatsApp Image */}
+          <div className="rounded-lg h-80 overflow-hidden">
+            <img
+              src="/whatsapp-image.png"
+              alt="Mint Community Library"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
 
