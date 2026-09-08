@@ -33,7 +33,7 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right - WhatsApp Image */}
+          {/* Right - mint-library-image */}
           <div className="rounded-lg h-80 overflow-hidden">
             <img
               src="/mint-library-image.jpeg"
