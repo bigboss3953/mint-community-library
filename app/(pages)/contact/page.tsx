@@ -19,8 +19,9 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    console.log('Form submitted:', formData)
-    alert('Thank you for your message! We\'ll get back to you soon.')
+    // Send message to email
+    const mailtoLink = `mailto:mintcommunitylibrary@gmail.com?subject=Message from ${formData.name}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage:\n${formData.message}`)}`
+    window.location.href = mailtoLink
     setFormData({ name: '', email: '', phone: '', message: '' })
   }
 
@@ -45,8 +46,10 @@ export default function Contact() {
               <div className="text-5xl mb-4">📍</div>
               <h3 className="font-heading font-bold text-lg text-mint-900 mb-2">Address</h3>
               <p className="text-mint-700">
-                123 Community Lane<br />
-                Our City, ST 12345
+                3 Sir BE OBIELI STREET<br />
+                ACHINA, AGUATA LGA<br />
+                ANAMBRA STATE<br />
+                NIGERIA
               </p>
             </div>
 
@@ -55,8 +58,8 @@ export default function Contact() {
               <div className="text-5xl mb-4">📞</div>
               <h3 className="font-heading font-bold text-lg text-mint-900 mb-2">Phone</h3>
               <p className="text-mint-700">
-                <a href="tel:+1234567890" className="hover:text-mint-600">
-                  (123) 456-7890
+                <a href="tel:+2349166770756" className="hover:text-mint-600">
+                  +234 916 677 0756
                 </a>
               </p>
             </div>
@@ -66,8 +69,8 @@ export default function Contact() {
               <div className="text-5xl mb-4">✉️</div>
               <h3 className="font-heading font-bold text-lg text-mint-900 mb-2">Email</h3>
               <p className="text-mint-700">
-                <a href="mailto:info@mintlibrary.com" className="hover:text-mint-600">
-                  info@mintlibrary.com
+                <a href="mailto:mintcommunitylibrary@gmail.com" className="hover:text-mint-600">
+                  mintcommunitylibrary@gmail.com
                 </a>
               </p>
             </div>
