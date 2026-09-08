@@ -78,23 +78,23 @@ export default function Resources() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="section-title text-center mb-4">How to Access Our Resources</h2>
           <p className="section-subtitle text-center text-mint-600 mb-8">
-            Many of our resources are available digitally, 24/7 with your library card.
+            Our resources are available both in-person and digitally during our hours of operation.
           </p>
 
           <div className="bg-mint-50 rounded-lg p-8 mb-8">
             <h3 className="font-heading font-bold text-lg text-mint-900 mb-4">Get Started:</h3>
             <ol className="space-y-3 text-mint-700">
-              <li>1. Get your free library card at the front desk</li>
-              <li>2. Visit our website to access digital resources</li>
+              <li>1. Visit us during our operating hours</li>
+              <li>2. Browse our extensive collection of resources</li>
               <li>3. Ask our librarians about specific resources you need</li>
-              <li>4. Download our mobile app for on-the-go access</li>
+              <li>4. Explore our digital offerings online</li>
             </ol>
           </div>
 
           <div className="text-center">
-            <button className="btn-primary">
-              Get Your Library Card Today
-            </button>
+            <p className="text-mint-700 mb-6">
+              Have questions about our resources? <a href="/contact" className="text-mint-600 hover:text-mint-700 font-medium">Contact us today</a>
+            </p>
           </div>
         </div>
       </section>
